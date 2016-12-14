@@ -24,6 +24,7 @@
 		4DC3A3D21E0108A000609516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DC3A3D51E0108A000609516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DC3A3D71E0108A000609516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC3A3DD1E0108EF00609516 /* ApplePayWithStripe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplePayWithStripe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		4DC3A3C71E0108A000609516 /* ApplePayWithStripe */ = {
 			isa = PBXGroup;
 			children = (
+				4DC3A3DD1E0108EF00609516 /* ApplePayWithStripe.entitlements */,
 				4DC3A3C81E0108A000609516 /* AppDelegate.swift */,
 				4DC3A3CA1E0108A000609516 /* ViewController.swift */,
 				4DC3A3CC1E0108A000609516 /* Main.storyboard */,
@@ -99,6 +101,12 @@
 				TargetAttributes = {
 					4DC3A3C41E0108A000609516 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8GWSL85966;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -253,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayWithStripe/ApplePayWithStripe.entitlements;
 				INFOPLIST_FILE = ApplePayWithStripe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HigherVisibility.ApplePayWithStripe;
@@ -264,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayWithStripe/ApplePayWithStripe.entitlements;
 				INFOPLIST_FILE = ApplePayWithStripe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HigherVisibility.ApplePayWithStripe;
@@ -290,6 +300,7 @@
 				4DC3A3DC1E0108A000609516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
