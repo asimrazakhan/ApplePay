@@ -24,7 +24,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
     let stripePublishableKey = "pk_test_roz5EbzmnlrWRPYKQOSx9id3"
     
     // To set this up, see https://github.com/stripe/example-ios-backend
-    let backendChargeURLString = ""
+    let backendChargeURLString = "https://stripepractice.herokuapp.com/"
     
     // To set this up, see https://stripe.com/docs/mobile/apple-pay
     let appleMerchantId = "merchant.com.HigherVisibility.Stripe"
@@ -45,7 +45,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
         
     }
     
-    @IBAction func beginPayment(sender: AnyObject) {
+    func beginPayment(sender: AnyObject) {
         if (stripePublishableKey == "") {
             let alert = UIAlertController(
                 title: "You need to set your Stripe publishable key.",
